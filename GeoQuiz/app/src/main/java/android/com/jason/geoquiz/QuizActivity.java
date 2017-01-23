@@ -10,7 +10,6 @@ import android.widget.Toast;
 public class QuizActivity extends Activity {
     private Button mTrueButton;
     private Button mFalseButton;
-    private Button mNextButton;
     private TextView mQuestionTextView;
 
     private TrueFalse[] mQuestionBank = new TrueFalse[] {

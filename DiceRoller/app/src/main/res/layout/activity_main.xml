@@ -17,20 +17,36 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_height="123dp"
-        android:layout_width="186dp">
+        android:layout_width="186dp"
+        android:layout_weight="0.65">
 
-        <Spinner
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner3"
-            android:layout_weight="0.12" />
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner2"
-            android:layout_weight="0.12" />
+            <TextView
+                android:layout_width="37dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:text="@string/roll_dice_num"
+                android:layout_weight="0.13"/>
+
+            <Spinner
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:id="@+id/max_spinner"
+                android:layout_weight="0.29"/>
+        </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/roll_dice"
+        android:text="@string/roll_dice"
+        android:layout_weight="0.12"/>
 
 </LinearLayout>
